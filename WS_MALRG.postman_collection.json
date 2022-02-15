@@ -1,0 +1,2539 @@
+{
+	"info": {
+		"_postman_id": "7ebd94e0-d149-4973-a167-8658ac0e66a9",
+		"name": "WS_MALRG",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "registro",
+			"item": [
+				{
+					"name": "department",
+					"item": [
+						{
+							"name": "department (ok)_todos",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "peticion",
+											"value": "department",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/ws/wsmalrg.php",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"ws",
+										"wsmalrg.php"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "department (ok)_con_tienda",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "peticion",
+											"value": "department",
+											"type": "text"
+										},
+										{
+											"key": "request",
+											"value": "{ \"con_tienda\": 1 }",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/ws/wsmalrg.php",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"ws",
+										"wsmalrg.php"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "department (ok)_sin_tienda",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "peticion",
+											"value": "department",
+											"type": "text"
+										},
+										{
+											"key": "request",
+											"value": "{ \"con_tienda\": 0 }",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/ws/wsmalrg.php",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"ws",
+										"wsmalrg.php"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "department (ok)_con_parametro_inventado",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "peticion",
+											"value": "department",
+											"type": "text"
+										},
+										{
+											"key": "request",
+											"value": "{ \"con_tienda\": \"inventado\" }",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/ws/wsmalrg.php",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"ws",
+										"wsmalrg.php"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "profesiones",
+					"item": [
+						{
+							"name": "profesiones (ok)",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "peticion",
+											"value": "profesiones",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/ws/wsmalrg.php",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"ws",
+										"wsmalrg.php"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "tiendas",
+					"item": [
+						{
+							"name": "tiendas (ok)_todas",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "peticion",
+											"value": "tiendas",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/ws/wsmalrg.php",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"ws",
+										"wsmalrg.php"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "tiendas (ok)_con_provincia",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "peticion",
+											"value": "tiendas",
+											"type": "text"
+										},
+										{
+											"key": "request",
+											"value": "{\"provincia\": 30}",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/ws/wsmalrg.php",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"ws",
+										"wsmalrg.php"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "tiendas (ko)_mala_provincia",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "peticion",
+											"value": "tiendas",
+											"type": "text"
+										},
+										{
+											"key": "request",
+											"value": "{\"provincia\": \"mal\"}",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/ws/wsmalrg.php",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"ws",
+										"wsmalrg.php"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "existe_email",
+					"item": [
+						{
+							"name": "existe_email (ok)_email_ya_en_uso",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "peticion",
+											"value": "existe_email",
+											"type": "text"
+										},
+										{
+											"key": "request",
+											"value": "{\"email\": \"asnodummie@yopmail.com\"}",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/ws/wsmalrg.php",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"ws",
+										"wsmalrg.php"
+									]
+								},
+								"description": "TIP: Esta función no comprueba si el parametro \"email\" que se le envía tiene formato correcto. Tampoco comprueba que no se le pase el email. TODO"
+							},
+							"response": []
+						},
+						{
+							"name": "existe_email (ok)_email_no_existe",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "peticion",
+											"value": "existe_email",
+											"type": "text"
+										},
+										{
+											"key": "request",
+											"value": "{\"email\": \"asnodummie2@yopmail.com\"}",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/ws/wsmalrg.php",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"ws",
+										"wsmalrg.php"
+									]
+								},
+								"description": "TIP: Esta función no comprueba si el parametro \"email\" que se le envía tiene formato correcto. Tampoco comprueba que no se le pase el email. TODO"
+							},
+							"response": []
+						},
+						{
+							"name": "existe_email (ko)_sin_email",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "peticion",
+											"value": "existe_email",
+											"type": "text"
+										},
+										{
+											"key": "request",
+											"value": "{\"email\": \"asnodummie@yopmail.com\"}",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/ws/wsmalrg.php",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"ws",
+										"wsmalrg.php"
+									]
+								},
+								"description": "TIP: Esta función no comprueba si el parametro \"email\" que se le envía tiene formato correcto. Tampoco comprueba que no se le pase el email. TODO"
+							},
+							"response": []
+						},
+						{
+							"name": "existe_email (ko)_mal_email",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "peticion",
+											"value": "existe_email",
+											"type": "text"
+										},
+										{
+											"key": "request",
+											"value": "{\"email\": 1999}",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/ws/wsmalrg.php",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"ws",
+										"wsmalrg.php"
+									]
+								},
+								"description": "TIP: Esta función no comprueba si el parametro \"email\" que se le envía tiene formato correcto. Tampoco comprueba que no se le pase el email. TODO"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "insert_tarjeta",
+					"item": [
+						{
+							"name": "ack 47 limit tienda",
+							"item": [
+								{
+									"name": "insert_tarjeta (ok)_ack47_1",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"type": "text",
+												"value": "application/x-www-form-urlencoded"
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "peticion",
+													"value": "insert_tarjeta",
+													"type": "text"
+												},
+												{
+													"key": "request",
+													"value": "{\"user_id\": \"527061\", \"tipo\": \"2\", \"full_card\": true,\"tarjeta\": \"0550764874451100\",\"tienda\": 16}",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{url}}/ws/wsmalrg.php",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"ws",
+												"wsmalrg.php"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "insert_tarjeta (ok)_ack47_2",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"type": "text",
+												"value": "application/x-www-form-urlencoded"
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "peticion",
+													"value": "insert_tarjeta",
+													"type": "text"
+												},
+												{
+													"key": "request",
+													"value": "{\"user_id\": \"527061\", \"tipo\": \"2\", \"full_card\": true,\"tarjeta\": \"0550764874451100\",\"tienda\": 17}",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{url}}/ws/wsmalrg.php",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"ws",
+												"wsmalrg.php"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "insert_tarjeta (ok)_ack47_3",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"type": "text",
+												"value": "application/x-www-form-urlencoded"
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "peticion",
+													"value": "insert_tarjeta",
+													"type": "text"
+												},
+												{
+													"key": "request",
+													"value": "{\"user_id\": \"527061\", \"tipo\": \"2\", \"full_card\": true,\"tarjeta\": \"0550764874451100\",\"tienda\": 19}",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{url}}/ws/wsmalrg.php",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"ws",
+												"wsmalrg.php"
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"description": "Grupo de peticiones que hará que se pueda conseguir el ACK 47, que es el número de \"error\" que indica que se ha cambiado demasiadas veces de tienda por hoy.\n\nSólo hay que ejecutarlas en el orden en el que están guardadas.",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"type": "text/javascript",
+										"exec": [
+											""
+										]
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"exec": [
+											""
+										]
+									}
+								}
+							]
+						},
+						{
+							"name": "insert_tarjeta (ok)_tarjeta_carrefour_valida",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "peticion",
+											"value": "insert_tarjeta",
+											"type": "text"
+										},
+										{
+											"key": "request",
+											"value": "{\"user_id\": \"790625\", \"tipo\": \"1\", \"full_card\": true,\"tarjeta\": \"0000220244192\",\"tienda\": 19}",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/ws/wsmalrg.php",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"ws",
+										"wsmalrg.php"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "insert_tarjeta (ko)_ack40_tarjeta_carrefour_mal",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "peticion",
+											"value": "insert_tarjeta",
+											"type": "text"
+										},
+										{
+											"key": "request",
+											"value": "{\"user_id\": \"790625\", \"tipo\": \"1\", \"full_card\": true,\"tarjeta\": \"91572654657449\",\"tienda\": 19}",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/ws/wsmalrg.php",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"ws",
+										"wsmalrg.php"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "insert_tarjeta (ok)_tarjeta_pass_valida",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "peticion",
+											"value": "insert_tarjeta",
+											"type": "text"
+										},
+										{
+											"key": "request",
+											"value": "{\"user_id\": \"790625\", \"tipo\": \"2\", \"full_card\": true,\"tarjeta\": \"0550764874451100\",\"tienda\": 19}",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/ws/wsmalrg.php",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"ws",
+										"wsmalrg.php"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "insert_tarjeta (ko)_ack40_tarjeta_pass_mal",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "peticion",
+											"value": "insert_tarjeta",
+											"type": "text"
+										},
+										{
+											"key": "request",
+											"value": "{\"user_id\": \"790625\", \"tipo\": \"2\", \"full_card\": true,\"tarjeta\": \"asdfasdf\",\"tienda\": 19}",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/ws/wsmalrg.php",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"ws",
+										"wsmalrg.php"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "insert_tarjeta (ok)_ack44_tarjeta_pass_ya_es_de_otro_solicitud_enviada",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "peticion",
+											"value": "insert_tarjeta",
+											"type": "text"
+										},
+										{
+											"key": "request",
+											"value": "{\"user_id\": \"790624\", \"tipo\": \"2\", \"full_card\": true,\"tarjeta\": \"0550764874451100\",\"tienda\": 19}",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/ws/wsmalrg.php",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"ws",
+										"wsmalrg.php"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "padrino",
+					"item": [
+						{
+							"name": "padrino (ok)",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "peticion",
+											"value": "padrino",
+											"type": "text"
+										},
+										{
+											"key": "request",
+											"value": "{\"cip\": 790705}",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/ws/wsmalrg.php",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"ws",
+										"wsmalrg.php"
+									]
+								},
+								"description": "TIP: Esta función no comprueba si el parametro \"email\" que se le envía tiene formato correcto. Tampoco comprueba que no se le pase el email. TODO"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "tipos_tarjeta",
+					"item": [
+						{
+							"name": "tipos_tarjeta (ok)",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "peticion",
+											"value": "tipos_tarjeta",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/ws/wsmalrg.php",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"ws",
+										"wsmalrg.php"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "feed_llenado_registro",
+					"item": [
+						{
+							"name": "feed_llenado_registro (ok)",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "peticion",
+											"value": "feed_llenado_registro",
+											"type": "text"
+										},
+										{
+											"key": "request",
+											"value": "{\"department\": \"alksdjflaksjdf\"}",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/ws/wsmalrg.php",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"ws",
+										"wsmalrg.php"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "insert_registro",
+					"item": [
+						{
+							"name": "insert_registro (ok)",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "peticion",
+											"value": "insert_registro",
+											"type": "text"
+										},
+										{
+											"key": "request",
+											"value": "{\"sexo\": 1,\"prenom\": \"Kevin\",\"nom\": \"Bacon\",\"email\": \"ejemejem456@yopmail.com\",\"password\": \"us0h2ua9UMsMMknkYDcsYQ==\",\"password2\": \"us0h2ua9UMsMMknkYDcsYQ==\",\"fechanacimiento\": 19770812,\"invitaciones_mail\": 0,\"carrefour\": 0,\"carrefour_sms\": 0,\"mobiles_sms\": 0}",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/ws/wsmalrg.php",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"ws",
+										"wsmalrg.php"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "update_registro",
+					"item": [
+						{
+							"name": "update_registro (ok)",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "peticion",
+											"value": "update_registro",
+											"type": "text"
+										},
+										{
+											"key": "request",
+											"value": "{\"user_id\": 527061,\"department\": 28,\"direccion\": \"Calle falsa, 123\",\"codpostal\": 65478,\"municipio\": \"Municipy\",\"profesion\": 3,\"conyuge\": 0,\"personas_hogar\": 1,\"nhijos\": 0,\"tiene_mascota\": 2,\"product_light\": 1,\"product_bio\": 1,\"product_alcohol\": 1,\"invitaciones_mail\": 1,\"mobile_sms\": 0,\"carrefour\": 1,\"carrefour_sms\": 0,\"telefonomovil\": 1111111111}",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/ws/wsmalrg.php",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"ws",
+										"wsmalrg.php"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update_registro_no_user_id",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "peticion",
+											"value": "update_registro",
+											"type": "text"
+										},
+										{
+											"key": "request",
+											"value": "{\"department\": 28,\"direccion\": \"Calle falsa, 123\",\"codpostal\": 65478,\"municipio\": \"Municipy\",\"profesion\": 3,\"conyuge\": 0,\"personas_hogar\": 1,\"nhijos\": 0,\"tiene_mascota\": 2,\"product_light\": 1,\"product_bio\": 1,\"product_alcohol\": 1,\"invitaciones_mail\": 1,\"mobile_sms\": 0,\"carrefour\": 1,\"carrefour_sms\": 0,\"telefonomovil\": 1111111111}",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/ws/wsmalrg.php",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"ws",
+										"wsmalrg.php"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update_registro_without_mandatory",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "peticion",
+											"value": "update_registro",
+											"type": "text"
+										},
+										{
+											"key": "request",
+											"value": "{\"user_id\": 527061,\"direccion\": \"Calle falsa, 123\",\"codpostal\": 65478,\"municipio\": \"Municipy\",\"profesion\": 3,\"conyuge\": 0,\"personas_hogar\": 1,\"nhijos\": 0,\"tiene_mascota\": 2,\"product_light\": 1,\"product_bio\": 1,\"product_alcohol\": 1,\"invitaciones_mail\": 1,\"mobile_sms\": 0,\"carrefour\": 1,\"carrefour_sms\": 0,\"telefonomovil\": 1111111111}",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/ws/wsmalrg.php",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"ws",
+										"wsmalrg.php"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update_registro_bad_user_id",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "peticion",
+											"value": "update_registro",
+											"type": "text"
+										},
+										{
+											"key": "request",
+											"value": "{\"user_id\": 1,\"department\": 28,\"direccion\": \"Calle falsa, 123\",\"codpostal\": 65478,\"municipio\": \"Municipy\",\"profesion\": 3,\"conyuge\": 0,\"personas_hogar\": 1,\"nhijos\": 0,\"tiene_mascota\": 2,\"product_light\": 1,\"product_bio\": 1,\"product_alcohol\": 1,\"invitaciones_mail\": 1,\"mobile_sms\": 0,\"carrefour\": 1,\"carrefour_sms\": 0,\"telefonomovil\": 1111111111}",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/ws/wsmalrg.php",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"ws",
+										"wsmalrg.php"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "detalle_perfil",
+					"item": [
+						{
+							"name": "detalle_perfil",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "peticion",
+											"value": "detalle_perfil",
+											"type": "text"
+										},
+										{
+											"key": "request",
+											"value": "{\"user_id\": 527061}",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/ws/wsmalrg.php",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"ws",
+										"wsmalrg.php"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "detalle_invitaciones",
+			"item": [
+				{
+					"name": "di_sin_data",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"const jsonData = pm.response.json(), ",
+									"      ack = jsonData.ACK;",
+									"",
+									"",
+									"pm.test( 'Detalle Invitaciones de una invitación que no existe.', function () {",
+									"    pm.expect( ack.errnumber ).to.eql( 10 );",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "request",
+									"value": "{\"id\":1899999\",user_id\":527061}",
+									"type": "text"
+								},
+								{
+									"key": "peticion",
+									"value": "detalle_invitaciones",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/ws/wsmalrg.php",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"ws",
+								"wsmalrg.php"
+							]
+						},
+						"description": "Pedimos el detalle de una invitación que no existe"
+					},
+					"response": []
+				},
+				{
+					"name": "di_ok_sin_corepro",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"const jsonData = pm.response.json(),",
+									"      ack = jsonData.ACK,",
+									"      invitation = jsonData.userinvitacionesdetalle;",
+									"",
+									"pm.test( 'Detalle Invitaciones todo ok sin corepro.', function () {",
+									"    pm.expect( ack.errnumber ).to.eql( 0 );",
+									"    pm.expect( invitation.id ).to.be.a( 'number' );",
+									"    pm.expect( invitation.product_id ).to.be.a( 'string' );",
+									"    pm.expect( invitation.product_name ).to.be.a( 'string' );",
+									"    pm.expect( invitation.product_desc ).to.be.a( 'string' );",
+									"    pm.expect( invitation.product_thumb_image ).to.be.a( 'string' );",
+									"    pm.expect( invitation.product_credit ).to.be.a( 'number' );",
+									"    pm.expect( invitation.product_corepro ).to.be.a( 'string' );",
+									"    pm.expect( invitation.url ).to.be.a( 'string' );",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "request",
+									"value": "{\"id\":189,\"user_id\":527061}",
+									"type": "text"
+								},
+								{
+									"key": "peticion",
+									"value": "detalle_invitaciones",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/ws/wsmalrg.php",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"ws",
+								"wsmalrg.php"
+							]
+						},
+						"description": "Pedimos el detalle de una invitación que no tiene corepro"
+					},
+					"response": []
+				},
+				{
+					"name": "di_ok_con_corepro",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"const jsonData = pm.response.json(),",
+									"      ack = jsonData.ACK,",
+									"      invitation = jsonData.userinvitacionesdetalle;",
+									"",
+									"pm.test( 'Detalle Invitaciones todo ok con corepro.', function () {",
+									"    pm.expect( ack.errnumber ).to.eql( 0 );",
+									"    pm.expect( invitation.id ).to.be.a( 'number' );",
+									"    pm.expect( invitation.product_id ).to.be.a( 'string' );",
+									"    pm.expect( invitation.product_name ).to.be.a( 'string' );",
+									"    pm.expect( invitation.product_desc ).to.be.a( 'string' );",
+									"    pm.expect( invitation.product_thumb_image ).to.be.a( 'string' );",
+									"    pm.expect( invitation.product_credit ).to.be.a( 'number' );",
+									"    pm.expect( invitation.product_corepro ).to.be.a( 'string' );",
+									"    pm.expect( invitation.url ).to.be.a( 'string' );",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "request",
+									"value": "{\"id\":177,\"user_id\":527061}",
+									"type": "text"
+								},
+								{
+									"key": "peticion",
+									"value": "detalle_invitaciones",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/ws/wsmalrg.php",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"ws",
+								"wsmalrg.php"
+							]
+						},
+						"description": "Pedimos el detalle de una invitación que tiene corepro"
+					},
+					"response": []
+				}
+			],
+			"description": "Data una invitación y un usuario nos devuelve los detalles de la misma.",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "detalle_invitaciones_tarjetas",
+			"item": [
+				{
+					"name": "dit_con_parámetros_erroneos",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"const jsonData = pm.response.json(),",
+									"      ack = jsonData.ACK;",
+									"",
+									"",
+									"pm.test( 'Detalle de las tarjetas de la invitación con parámetros sin formato adecuado.', function () {",
+									"    pm.expect( ack.errnumber ).to.eql( 400 );",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "request",
+									"value": "{\"id\":177a,\"user_id\":527061}",
+									"type": "text"
+								},
+								{
+									"key": "peticion",
+									"value": "detalle_invitaciones_tarjetas",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/ws/wsmalrg.php",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"ws",
+								"wsmalrg.php"
+							]
+						},
+						"description": "Hacemos la petición pasándole unos parámetros que no cumplen con el formato indicado"
+					},
+					"response": []
+				},
+				{
+					"name": "dit_con_usuario_o_tarjeta_que_no_existen",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"const jsonData = pm.response.json(),",
+									"      ack = jsonData.ACK;",
+									"",
+									"",
+									"pm.test( 'Detalle de las tarjetas de la invitación con un usuario o invitación no existen.', function () {",
+									"    pm.expect( ack.errnumber ).to.eql( 404 );",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "request",
+									"value": "{\"id\":177777777777,\"user_id\":527061}",
+									"type": "text"
+								},
+								{
+									"key": "peticion",
+									"value": "detalle_invitaciones_tarjetas",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/ws/wsmalrg.php",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"ws",
+								"wsmalrg.php"
+							]
+						},
+						"description": "El usuario o la invitación que se pasa por parámetro no existen"
+					},
+					"response": []
+				},
+				{
+					"name": "dit_con_usuario_que_no_corresponde_la_invitacion",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"const jsonData = pm.response.json(),",
+									"      ack = jsonData.ACK;",
+									"",
+									"",
+									"pm.test( 'Detalle de las tarjetas de la invitación con un usuario que no le corresponde la invitación.', function () {",
+									"    pm.expect( ack.errnumber ).to.eql( 51 );",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "request",
+									"value": "{\"id\":177,\"user_id\":790625}",
+									"type": "text"
+								},
+								{
+									"key": "peticion",
+									"value": "detalle_invitaciones_tarjetas",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/ws/wsmalrg.php",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"ws",
+								"wsmalrg.php"
+							]
+						},
+						"description": "La invitación y el usuario existen, pero al usuario no le corresponde esa invitación"
+					},
+					"response": []
+				},
+				{
+					"name": "dit_ok",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"const jsonData = pm.response.json(),",
+									"      ack = jsonData.ACK;",
+									"",
+									"pm.test( 'Detalle de las tarjetas de la invitación con respuesta ok.', function () {",
+									"    pm.expect( ack.errnumber ).to.eql( 0 );",
+									"    ",
+									"    if ( pm.expect(jsonData).to.have.property( 'userinvitacionestarjetas' ) ) {",
+									"        const cards = jsonData.userinvitacionestarjetas;    ",
+									"        ",
+									"        for (var card of cards) {",
+									"            pm.expect( card.id ).to.be.a( 'number' );",
+									"            pm.expect( card.card ).to.be.a( 'string' );",
+									"            pm.expect( card.is_used ).to.be.a( 'boolean' );",
+									"        }  ",
+									"    }",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "request",
+									"value": "{\"id\":177,\"user_id\":527061}",
+									"type": "text"
+								},
+								{
+									"key": "peticion",
+									"value": "detalle_invitaciones_tarjetas",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/ws/wsmalrg.php",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"ws",
+								"wsmalrg.php"
+							]
+						},
+						"description": "La invitación y el usuario existen, pero al usuario no le corresponde esa invitación"
+					},
+					"response": []
+				}
+			],
+			"description": "Nos devuelve las tarjetas que están disponibles para una determinada invitación de un usuario.",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "feed_cupones",
+			"item": [
+				{
+					"name": "fc_con_parametros_erroneos",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"const jsonData = pm.response.json(),",
+									"      ack = jsonData.ACK;",
+									"",
+									"pm.test( 'Feed cupones con parámetros sin formato adecuado.', function () {",
+									"    pm.expect( ack.errnumber ).to.eql( 400 );",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "request",
+									"value": "{\"user_id\":7jj90625}",
+									"type": "text"
+								},
+								{
+									"key": "peticion",
+									"value": "feed_cupones",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/ws/wsmalrg.php",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"ws",
+								"wsmalrg.php"
+							]
+						},
+						"description": "Pasando parámetros con formato erroneo."
+					},
+					"response": []
+				},
+				{
+					"name": "fc_usuario_que no existe",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"const jsonData = pm.response.json(),",
+									"      ack = jsonData.ACK;",
+									"",
+									"pm.test( 'Feed cupones con respuesta ok.', function () {",
+									"    pm.expect( ack.errnumber ).to.eql( 404 );",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "request",
+									"value": "{\"user_id\":79062588}",
+									"type": "text"
+								},
+								{
+									"key": "peticion",
+									"value": "feed_cupones",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/ws/wsmalrg.php",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"ws",
+								"wsmalrg.php"
+							]
+						},
+						"description": "Relación de todos los cupones de un usuario con resultado ok."
+					},
+					"response": []
+				},
+				{
+					"name": "fc_respuesta_ok",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"const jsonData = pm.response.json(),",
+									"      ack = jsonData.ACK;",
+									"",
+									"pm.test( 'Feed cupones con respuesta ok.', function () {",
+									"    pm.expect( ack.errnumber ).to.eql( 0 );",
+									"    ",
+									"    if ( typeof jsonData.usercupones != 'undefined' ) {",
+									"        const coupons = jsonData.usercupones;    ",
+									"        ",
+									"        for (var coupon of coupons) {",
+									"            pm.expect( coupon.id ).to.be.a( 'number' );",
+									"            pm.expect( coupon.product_name ).to.be.a( 'string' );",
+									"            pm.expect( coupon.product_desc ).to.be.a( 'string' );",
+									"            pm.expect( coupon.fecha_vencimiento ).to.be.a( 'string' );",
+									"            pm.expect( coupon.fecha_pedido ).to.be.a( 'string' );",
+									"            pm.expect( coupon.product_thumb_image ).to.be.a( 'string' );",
+									"            pm.expect( coupon.codigo_barras ).to.be.a( 'string' );",
+									"            pm.expect( coupon.cupon ).to.be.a( 'string' );",
+									"            pm.expect( coupon.product_corepro ).to.be.a( 'string' );",
+									"            pm.expect( coupon.creditos ).to.be.a( 'number' );",
+									"            pm.expect( coupon.ean ).to.be.a( 'string' );",
+									"            pm.expect( coupon.tarjeta ).to.be.a( 'string' );",
+									"            pm.expect( coupon.tienda ).to.be.a( 'string' );",
+									"        }",
+									"    }",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "request",
+									"value": "{\"user_id\":790625}",
+									"type": "text"
+								},
+								{
+									"key": "peticion",
+									"value": "feed_cupones",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/ws/wsmalrg.php",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"ws",
+								"wsmalrg.php"
+							]
+						},
+						"description": "Relación de todos los cupones de un usuario con resultado ok."
+					},
+					"response": []
+				}
+			],
+			"description": "Todos los cupones que tiene un determinado usuario."
+		},
+		{
+			"name": "feed_invitaciones",
+			"item": [
+				{
+					"name": "fi_respuesta_ok",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "request",
+									"value": "{\"user_id\":527061}",
+									"type": "text"
+								},
+								{
+									"key": "peticion",
+									"value": "feed_invitaciones",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/ws/wsmalrg.php",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"ws",
+								"wsmalrg.php"
+							]
+						},
+						"description": "Relación de todas las invitaciones de un usuario con resultado ok."
+					},
+					"response": []
+				}
+			],
+			"description": "Dado un uusario obtengo todas sus invitaciones"
+		},
+		{
+			"name": "getUserCards",
+			"item": [
+				{
+					"name": "guc_ok",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "request",
+									"value": "{\"user_id\":\"790703\"}",
+									"type": "text"
+								},
+								{
+									"key": "peticion",
+									"value": "getUserCards",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/ws/wsmalrg.php",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"ws",
+								"wsmalrg.php"
+							]
+						},
+						"description": "Obtiene las tarjetas de un usuario"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "cupones",
+			"item": [
+				{
+					"name": "anular_OK",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const jsonData = pm.response.json(), ",
+									"      ack = jsonData.ACK;",
+									"",
+									"",
+									"pm.test( 'Detalle Invitaciones de una invitación que no existe.', function () {",
+									"    pm.expect( ack.errnumber ).to.eql( 10 );",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "request",
+									"value": "{\"id\":1899999,\"user_id\":527061,\"tarjeta_1\":11,\"tarjeta_2\":12,\"fecha\":\"23-10-2019\"}",
+									"type": "text"
+								},
+								{
+									"key": "peticion",
+									"value": "anular",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/ws/wsmalrg.php",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"ws",
+								"wsmalrg.php"
+							]
+						},
+						"description": "Pedimos el detalle de una invitación que no existe"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "App",
+					"item": [
+						{
+							"name": "Obtener fuente",
+							"item": [
+								{
+									"name": "get_classes_unicode_KO_204",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"type": "text",
+												"value": "application/x-www-form-urlencoded"
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "classes_id[]",
+													"value": "product-face-status-030",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{url}}get_classes_unicode",
+											"host": [
+												"{{url}}get_classes_unicode"
+											]
+										},
+										"description": "Cuando la clase que se busca de icono no existe"
+									},
+									"response": []
+								},
+								{
+									"name": "get_classes_unicode_KO_500",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"type": "text",
+												"value": "application/x-www-form-urlencoded"
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "classes_id[]",
+													"value": "product-face-status-030",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{url}}get_classes_unicode?",
+											"host": [
+												"{{url}}get_classes_unicode"
+											],
+											"query": [
+												{
+													"key": "classes_id",
+													"value": "product-face-status-03",
+													"disabled": true
+												}
+											]
+										},
+										"description": "Da un 500 cuando el archivo monavis_icons.less no existe o está vacío."
+									},
+									"response": [
+										{
+											"name": "get_classes_unicode_KO_500",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"name": "Content-Type",
+														"type": "text",
+														"value": "application/x-www-form-urlencoded"
+													}
+												],
+												"body": {
+													"mode": "urlencoded",
+													"urlencoded": [
+														{
+															"key": "classes_id[]",
+															"value": "product-face-status-030",
+															"type": "text"
+														}
+													]
+												},
+												"url": {
+													"raw": "{{url}}/api/get_classes_unicode",
+													"host": [
+														"{{url}}"
+													],
+													"path": [
+														"api",
+														"get_classes_unicode"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "html",
+											"header": [
+												{
+													"key": "Date",
+													"value": "Mon, 25 Feb 2019 15:33:43 GMT"
+												},
+												{
+													"key": "Server",
+													"value": "Apache/2.4.37 (Win64) PHP/5.6.38"
+												},
+												{
+													"key": "X-Powered-By",
+													"value": "PHP/5.6.38"
+												},
+												{
+													"key": "P3P",
+													"value": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\""
+												},
+												{
+													"key": "Content-Length",
+													"value": "124"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5, max=100"
+												},
+												{
+													"key": "Connection",
+													"value": "Keep-Alive"
+												},
+												{
+													"key": "Content-Type",
+													"value": "text/html; charset=UTF-8"
+												}
+											],
+											"cookie": [],
+											"body": "{\"ack\":\"Internal code error not found\",\"errnumber\":\"500\",\"description\":\"Error code 'class code file' not found in database\"}"
+										}
+									]
+								},
+								{
+									"name": "get_classes_unicode_OK",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/x-www-form-urlencoded",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "classes_id[]",
+													"value": "product-face-status-03",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{url}}get_classes_unicode?",
+											"host": [
+												"{{url}}get_classes_unicode"
+											],
+											"query": [
+												{
+													"key": "classes_id",
+													"value": "product-face-status-03",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					],
+					"description": "Funciones específicas para la app móvil.",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "login_KO_403",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user",
+									"value": "asnodummie@yopmail.com3",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "asno_dummie",
+									"type": "text"
+								},
+								{
+									"key": "app_token",
+									"value": "86fda9e12a6dc0d204e29872a72edddf9a88ceb3f0960de674",
+									"type": "text"
+								},
+								{
+									"key": "platform",
+									"value": "{{platform}}",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}api/login",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login_KO_401",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user",
+									"value": "asnodummie@yopmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "asno_dummie3",
+									"type": "text"
+								},
+								{
+									"key": "app_token",
+									"value": "86fda9e12a6dc0d204e29872a72edddf9a88ceb3f0960de674",
+									"type": "text"
+								},
+								{
+									"key": "platform",
+									"value": "{{platform}}",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}api/login",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login_OK",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const jsonData = pm.response.json();",
+									"    ",
+									"let utils = eval(pm.environment.get(\"loadUtils\")),",
+									"    timePetition = '',",
+									"    idUser = '';",
+									"    salt = '';",
+									"    token = '';",
+									"     ",
+									"pm.test(\"Logueo de usuario que existe ok\", () => {",
+									"    pm.expect(jsonData.ack).to.eql(\"OK\") ;",
+									"    pm.expect(jsonData.errnumber).to.eql(\"200\");",
+									"    ",
+									"    timePetition = jsonData.time;",
+									"    idUser = jsonData.data.user_id;",
+									"    salt = pm.environment.get(\"salt\");",
+									"    ",
+									"    token = utils.SHA1(salt + idUser + timePetition);",
+									"    pm.environment.set(\"token\", token);",
+									"    pm.environment.set(\"idUser\", idUser);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user",
+									"value": "asnodummie@yopmail.com",
+									"description": "username",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "{{login_pass_asno}}",
+									"description": "contraseña sin encriptar",
+									"type": "text"
+								},
+								{
+									"key": "app_token",
+									"value": "{{login_app_token_asno}}",
+									"description": "campo token_app_mobile de panelista",
+									"type": "text"
+								},
+								{
+									"key": "platform",
+									"value": "{{platform}}",
+									"description": "Enum de plataforma. ",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}api/login",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"login"
+							]
+						},
+						"description": "* Comprobamos que podemos logarnos en el sistema.\n\n* Utilizamos al usuario asno.\n \nREQUISITOS PREVIOS\n\n* Si antes no ejecutamos la petición functions_environment_ok no va a funcionar. "
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	]
+}
